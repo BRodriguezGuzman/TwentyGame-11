@@ -31,9 +31,13 @@ function usern() {
         usern = usern + r;
         
         alert(`You got ${r}. Your total number is ${usern}.`);
+        
+        if (usern > 20) {
+            break;
+        }
 
         var cont = prompt("If you want to draw, press any key. To stop getting numbers, press n")
-    } while ((cont != `n`) || (usern > 20))
+    } while (cont != `n`)
     return usern
 }
 
